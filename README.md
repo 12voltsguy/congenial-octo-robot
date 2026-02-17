@@ -1,5 +1,5 @@
 # Rcare API Interface
-An open-source interface layer for integrating with Rcare-compatible endpoints and workflows. Built and maintained by **Ronco Technology Inc.**, this project provides a consistent API façade, reference implementations, and example clients to speed up integrations.
+An open-source interface layer for integrating with Rcare-compatible endpoints and workflows. Built by **Ronco Technology Inc.**, this project provides a consistent API façade, reference implementations, and example clients to speed up integrations. This project is published with permission from Ronco Technology Inc. and is licensed under GPLv3
 
 ---
 
