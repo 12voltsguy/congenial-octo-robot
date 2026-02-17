@@ -1,42 +1,37 @@
-# congenial-octo-robot
-API development project to integrate Responder5k to Rcare API
-
-# Project Name
-A short summary describing what the project does and why it exists.
+# Rcare API Interface
+An open-source interface layer for integrating with Rcare-compatible endpoints and workflows. Built and maintained by **Ronco Technology Inc.**, this project provides a consistent API façade, reference implementations, and example clients to speed up integrations.
 
 ---
 
 ## 📌 Overview
-Provide a high‑level description of the project, its goals, and the problems it solves.
+Rcare API Interface standardizes common operations (authentication, event ingestion, status retrieval, and webhook callbacks) and provides tooling for health checks, logging, and error handling. It is designed to be portable, testable, and easy to deploy in modern environments.
 
-Example:
-This project provides tools for managing XYZ workflows within ABC environments.  
-It is designed for reliability, modularity, and compatibility with modern systems.
+**Key goals**
+- Provide a clear, stable interface abstraction
+- Minimize boilerplate for consumers
+- Encourage secure-by-default deployments
 
 ---
 
 ## 🚀 Features
-- Feature 1  
-- Feature 2  
-- Feature 3  
-- Optional: Platform or hardware-specific capabilities
+- Uniform REST/JSON endpoints with versioning
+- Pluggable auth (token, OAuth2 client credentials)
+- Webhook delivery & signature verification
+- Structured logs and request tracing (OpenTelemetry-friendly)
+- Reference clients and examples
 
 ---
 
-## 🏁 Getting Started
+## 🏁 Quick Start
 
 ### Prerequisites
-List any required software, libraries, or dependencies.  
-Example:
-- Python 3.10+
-- Node.js 18+
-- CUDA toolkit (if GPU‑related)
-- Supported OS (Linux, Windows, macOS)
+- Runtime: Node.js 18+ or Python 3.10+ (adjust to your stack)
+- Docker (optional)
+- Access to target Rcare-compatible endpoints
 
-### Installation
-Provide copy‑paste friendly installation instructions:
-
+### Installation (example)
 ```bash
-git clone https://github.com/<org>/<repo>.git
-cd <repo>
-<installation steps>
+git clone https://github.com/ronco-technology/rcare-api-interface.git
+cd rcare-api-interface
+# install dependencies
+npm ci    # or: pip install -r requirements.txt
